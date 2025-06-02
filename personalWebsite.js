@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Sign In Page",
+    title: "Sign Up Page",
     linkGit: "https://github.com/TilenWrnc/Sign-Up-Form-App",
     linkLive: "https://tilenwrnc.github.io/Sign-Up-Form-App/",
     image: "https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/2753.png",
@@ -8,59 +8,80 @@ const projects = [
   },
   {
     title: "Rock Paper Scissors",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/RockPaperScissors",
     linkLive: "",
     image: "./images/RockPaperScissors.png",
     description: "A small JavaScript game where the player competes against the computer by choosing rock, paper, or scissors. It helped me practice conditionals, functions, and user interaction."
   },
   {
     title: "Etch A Sketch",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/EtchASketch",
     linkLive: "",
     image: "/images/EtchASketch.png",
     description: "A drawing grid built with HTML, CSS, and JavaScript where users can 'draw' by hovering over squares. It was a fun way to learn DOM manipulation and event handling."
   },
   {
     title: "Calculator",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/Calculator",
     linkLive: "",
     image: "./images/Calculator.png",
     description: "A basic calculator that performs simple math operations like addition, subtraction, multiplication, and division. Built to improve my skills in JavaScript logic and UI layout."
   },
   {
     title: "Library",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/Libary",
     linkLive: "",
     image: "./images/Library.png",
     description: "A small app to keep track of books with options to add, remove, and mark them as read. I built it using JavaScript and practiced working with objects, arrays, and dynamic DOM updates."
   },
   {
     title: "Tic Tac Toe",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/TicTacToe",
     linkLive: "",
     image: "./images/TicTacToe.png",
     description: "A two-player game where players take turns marking X or O on a 3×3 grid. This project helped me learn about game logic, conditionals, and managing state in JavaScript."
   },
   {
     title: "To Do List",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/ToDoList",
     linkLive: "",
     image: "./images/ToDoList.png",
     description: "A simple task manager that lets users add, complete, and delete tasks. I used this project to get more comfortable with forms, event listeners, and updating the DOM."
   },
   {
     title: "Weather App",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/WeatherApp",
     linkLive: "",
     image: "./images/WeatherApp.png",
     description: "An app that shows the current weather for any city using a weather API. It taught me how to work with APIs, fetch data, and display it dynamically with JavaScript."
   },
   {
     title: "BattleShip",
-    linkGit: "",
+    linkGit: "https://github.com/TilenWrnc/BattleShip",
     linkLive: "",
     image: "./images/BattleShip.png",
     description: "A basic version of the classic game where the player tries to sink the computer's ships. This project helped me understand more complex logic, grid systems, and handling user interaction."
+  },
+  {
+    title: "CV Builder",
+    linkGit: "https://github.com/TilenWrnc/BattleShip",
+    linkLive: "",
+    image: "./images/BattleShip.png",
+    description: "An interactive resume builder app that allows users to input and preview personal, educational, and work experience information. Implemented controlled components and state lifting for form management. Emphasized clean layout and real-time preview functionality for a smooth user experience."
+  },
+  {
+    title: "Memory Game",
+    linkGit: "https://github.com/TilenWrnc/MemoryGame",
+    linkLive: "",
+    image: "./images/MemoryGame.png",
+    description: "A classic card-matching memory game developed using React. Used hooks for state management and implemented game logic to track matches, moves, and win conditions. Focused on user interaction, simple animations, and modular component structure."
+  },
+  {
+    title: "Shopping Cart",
+    linkGit: "https://github.com/TilenWrnc/ShoppingCart",
+    linkLive: "",
+    image: "./images/BattleShip.png",
+    description: "A dynamic online shop built with React, featuring product browsing, cart management, and quantity updates. Utilized React Router for navigation and state management to track items across pages. Focused on creating a responsive and user-friendly interface with real-time cart updates."
   }
 ];
 
