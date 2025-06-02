@@ -55,6 +55,7 @@
 
 .about-me p {
     font-size: 2.5vh;
+    text-align: center;
 }
 
 .skills-container h2 {
@@ -107,6 +108,11 @@ svg {
     margin-bottom: 20vh;
 }
 
+.my-projects > p {
+    font-size: 3vh;
+    text-align: center;
+}
+
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,6 +131,7 @@ svg {
 .project-pic {
     height: auto;
     width: 30vh;
+    margin-right: 5vh;
 }
 
 .project-title {
@@ -247,6 +254,10 @@ a {
 .fade-in-section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.fade-in-section.visible:hover {
+        transform: scale(1.1);
 }
 
 /* RESPONSIVE */
