@@ -76,6 +76,13 @@ const projects = [
     image: "./images/BattleShip.png",
     description: "A dynamic online shop built with React, featuring product browsing, cart management, and quantity updates. Utilized React Router for navigation and state management to track items across pages. Focused on creating a responsive and user-friendly interface with real-time cart updates."
   },
+  {
+    title: "The Odin Book",
+    linkGit: "https://github.com/TilenWrnc/The-Odin-Book",
+    linkLive: "https://the-odin-book.onrender.com/",
+    image: "./images/TheOdinBook.png",
+    description: "The Odin Book is a mini Facebook-style social networking app where users can create profiles, follow others, write posts, comment, like, and send messages to each other. It is built using Node.js, Express, PostgreSQL, and Prisma ORM."
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
