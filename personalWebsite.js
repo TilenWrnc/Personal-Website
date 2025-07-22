@@ -77,6 +77,13 @@ const projects = [
     description: "A dynamic online shop built with React, featuring product browsing, cart management, and quantity updates. Utilized React Router for navigation and state management to track items across pages. Focused on creating a responsive and user-friendly interface with real-time cart updates."
   },
   {
+    title: "To do List remastered",
+    linkGit: "https://github.com/TilenWrnc/to-do-remastered",
+    linkLive: "https://to-do-remastered-tnpp.vercel.app/",
+    image: "./images/ToDoRemastered.png",
+    description: "A remastered version of my To do List. Using NextJs with typescript and using Convex database."
+  },
+  {
     title: "The Odin Book",
     linkGit: "https://github.com/TilenWrnc/The-Odin-Book",
     linkLive: "https://the-odin-book.onrender.com/",
