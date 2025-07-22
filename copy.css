@@ -1,0 +1,282 @@
+:root {
+    --title-size: 10.5rem;
+    --primary-color: rgb(6, 174, 65);
+    --white-color: rgb(245, 245, 220);
+    --title-color: rgb(6, 174, 65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    background-color: var(--white-color);
+    overflow-x: hidden;
+}
+
+.about-me {
+    opacity: 0;
+    padding: 5vh 20vh 20vh;
+    transform: translateX(500px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    will-change: opacity, transform, display;
+}
+
+.about-me.visible,
+.personal-pic.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.about-me h2 {
+    text-align: center;
+    font-size: var(--title-size);
+    margin-bottom: 30px;
+    width: 100%;
+    border-bottom: 2px solid var(--title-color);
+    color: var(--title-color);
+}
+
+.about-me p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.skills-container h2 {
+    text-align: center;
+    font-size: var(--title-size);
+    margin-bottom: 7vh;
+    color: white;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20vh;
+    padding: 0vh 10vh;
+}
+
+.skill-intro {
+    font-size: 5rem;
+    margin-bottom: 5vh;
+    text-align: center;
+    border-bottom: 2px solid white ;
+    color: white;
+}
+
+.skill-icons {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    overflow: hidden;
+}
+
+svg {
+    width: 10vh;
+    height: 10vh;
+    fill: white;
+}
+
+.skills-container {
+    margin-bottom: 20vh;
+    padding: 10vh 0vh;
+    background-color: var(--primary-color);
+}
+
+.skills-container * {
+    background-color: var(--primary-color);
+}
+
+.my-projects {
+    margin-bottom: 20vh;
+}
+
+.my-projects > p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10vh;
+    padding: 5vh;
+}
+
+.project-intro {
+    text-align: center;
+    font-size: var(--title-size);
+    color: var(--title-color);
+    margin-bottom: 10vh;
+}
+
+.project-pic {
+    height: auto;
+    width: 400px;
+    margin-right: 10px;
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 2.5vh;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+
+.project { 
+    padding: 5vh;
+    border-radius: 1vh;
+    background-color: rgb(189, 236, 182);
+    box-shadow: 10px 10px 5px 0px rgba(6,174,65,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(6,174,65,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(6,174,65,0.75);
+}
+
+.project * {
+    background-color: rgb(189, 236, 182);
+}
+
+.project div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+.links {
+    display: flex;
+    gap: 3vh;
+}
+
+.links a svg{
+    width: 5vh;
+    height: 5vh;
+    fill: black;
+}
+
+.links a {
+    overflow-y: hidden;
+}
+
+.contact-me {
+    padding: 4vh 0vh 7vh 0vh;
+    background-color: var(--primary-color);
+}
+
+.contact-me h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5vh;
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0vh 10vh;
+    gap: 15vh;
+    overflow-y: hidden;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    color: white;
+    justify-content: center;
+}
+
+.contact p {
+    font-size: 2.5rem;   
+}
+
+.contact svg {
+    height: 7vh;
+    width: 7vh;
+}
+    
+.contact-me * {
+    background-color: var(--primary-color);
+}
+
+
+/* ANIMATIONS */
+
+.skill-icons svg {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.skill-icons svg:hover
+ {
+    transform: scale(1.05);
+    position: relative;
+    z-index: 100;
+}
+
+.links a svg:hover,
+.contact:hover {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.project:hover{
+    transform: scale(1.05);
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-section.visible:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+
+@media (width < 1200px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .intro {
+        flex-direction: column;
+    }
+    a {
+        flex-direction: column;
+    }
+}
+
+@media (width < 930px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,116 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --title-size: 10.5vh;
+    --title-size: 10.5rem;
     --primary-color: rgb(6, 174, 65);
     --white-color: rgb(245, 245, 220);
     --title-color: rgb(6, 174, 65);
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
     background-color: var(--white-color);
 }
 
-.intro {
-    display: flex;
-    padding: 8vh;
-    align-items: center;
-    margin-bottom: 20vh;
-}
-
-.personal-pic {
-    width: 80vh;
-    height: 80vh;
-    border: 3px solid black;
-    margin-right: 50px;
-    opacity: 0;
-    transform: translateX(-500px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    will-change: opacity, transform;
-}
-
-.about-me {
-    opacity: 0;
-    transform: translateX(500px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-    will-change: opacity, transform;
-}
-
-.about-me.visible,
-.personal-pic.visible {
-    opacity: 1;
-    transform: translateX(0) translateY(0);
-}
-
-.about-me h2 {
-    text-align: center;
-    font-size: var(--title-size);
-    margin-bottom: 30px;
-    width: 100%;
-    border-bottom: 2px solid var(--title-color);
-    color: var(--title-color);
-}
-
-.about-me p {
-    font-size: 2.5vh;
-    text-align: center;
-}
-
-.skills-container h2 {
-    text-align: center;
-    font-size: var(--title-size);
-    margin-bottom: 7vh;
-    color: white;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20vh;
-    padding: 0vh 10vh;
-}
-
-.skill-intro {
-    font-size: 5vh;
-    margin-bottom: 5vh;
-    text-align: center;
-    border-bottom: 2px solid white ;
-    color: white;
-}
-
-.skill-icons {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
+body {
+    position: relative;
 }
 
 svg {
-    width: 10vh;
-    height: 10vh;
-    fill: white;
+    height: 50px;
+    width: 50px;
 }
 
-.skills-container {
-    margin-bottom: 20vh;
-    padding: 10vh 0vh;
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20vw;
+    font-size: clamp(0.5rem, 2vw, 20px);
+    text-align: center;
+
+}
+
+.about-me h2 {
+    margin-bottom: 10px;
+    font-size: clamp(2rem, 3.5vw, 4vw);
+}
+
+.about-me p {
+    margin-bottom: 50px;
+}
+
+.skills-container *{
     background-color: var(--primary-color);
+    text-align: center;
+    padding: 1.3vw 0vw;
 }
 
-.skills-container * {
-    background-color: var(--primary-color);
+.skills-container h2 {
+    font-size: clamp(2rem, 3.5vw, 4vw);
 }
 
-.my-projects {
-    margin-bottom: 20vh;
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills h3 {
+    font-size: clamp(1.2rem, 2vw, 4vw);
+}
+
+.skills > div {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.skill-icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-icons svg {
+  width: clamp(15px, 10vw, 100px);
+  cursor: pointer;
+  fill: white;
+  height: auto;
+}
+
+.project-intro {
+    font-size: clamp(1.5rem, 2vw, 4vw);
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.project-title {
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+
 }
 
 .my-projects > p {
-    font-size: 3vh;
+    font-size: clamp(0.5rem, 2vw, 20px);
     text-align: center;
+    margin-bottom: 30px;
+    padding: 0px 7vw;
 }
 
 .project-container {
@@ -118,122 +111,89 @@ svg {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 10vh;
-    padding: 5vh;
-}
-
-.project-intro {
-    text-align: center;
-    font-size: var(--title-size);
-    color: var(--title-color);
-    margin-bottom: 10vh;
-}
-
-.project-pic {
-    height: auto;
-    width: 30vh;
-    margin-right: 5vh;
-}
-
-.project-title {
-    text-align: center;
-    margin-bottom: 2.5vh;
-    color: black;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    gap: 5vh;
+    padding: 5vh 10vh;
 }
 
 .project { 
-    padding: 5vh;
     border-radius: 1vh;
+    padding: 2vw;
     background-color: rgb(189, 236, 182);
     box-shadow: 10px 10px 5px 0px rgba(6,174,65,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(6,174,65,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(6,174,65,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project * {
     background-color: rgb(189, 236, 182);
 }
 
-.project div {
+.project-card-intro {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2vh;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.project-main {
+    font-size: clamp(0.5rem, 2vw, 20px);
 }
 
 .links {
     display: flex;
-    gap: 3vh;
+    gap: 1vw;
 }
 
-.links a svg{
-    width: 5vh;
-    height: 5vh;
-    fill: black;
+.links a svg {
+    width: clamp(5px, 4vw, 100px);
+
 }
 
-.contact-me {
-    padding: 4vh 0vh 7vh 0vh;
-    background-color: var(--primary-color);
-}
-
-.contact-me h3 {
-    font-size: 5vh;
-    text-align: center;
-    margin-bottom: 5vh;
-    width: 100%;
-    color: white;
-    border-bottom: 2px solid white;
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0vh 10vh;
-    gap: 15vh;
-}
-
-.contact {
+.project-pic {
+    width: clamp(10px, 50vw, 400px);
+    height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3vh;
-    color: white;
-    justify-content: center;
+    justify-self: center;
+    margin-bottom: 1vw;
 }
 
-.contact p {
-    font-size: 2.5vh;   
+/* RESPONSIVE */
+
+@media (width < 1700px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-.contact svg {
-    height: 7vh;
-    width: 7vh;
+@media (width < 1180px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-    
-.contact-me * {
-    background-color: var(--primary-color);
-}
-
 
 /* ANIMATIONS */
 
-.skill-icons svg,
-.contact, 
-.links a svg{
+.skill-icons svg {
     transition: transform 0.3s ease-in-out; 
 }
 
-.skill-icons svg:hover,
-.contact:hover,
-.links a svg:hover{
-    transform: scale(1.2);
+.skill-icons svg:hover{
+    transform: scale(1.05);
+    position: relative;
+    z-index: 100;
+}
+
+.links a svg:hover,
+.contact:hover {
+    fill: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .project {
@@ -241,7 +201,7 @@ a {
 }
 
 .project:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .fade-in-section {
@@ -257,31 +217,29 @@ a {
 }
 
 .fade-in-section.visible:hover {
-        transform: scale(1.1);
+    transform: scale(1.05);
+}
+ 
+.contact-me * { 
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
 }
 
-/* RESPONSIVE */
+.contact-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    font-size: clamp(0.5rem, 2vw, 20px);
 
-@media (width < 900px) {
-    .project-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .skills {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contact-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .intro {
-        flex-direction: column;
-    }
-    a {
-        flex-direction: column;
-    }
 }
 
-@media (width < 600px) {
-    .project-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.contact-container a svg {
+    width: clamp(15px, 5vw, 40px);
+    height: auto;
 }
