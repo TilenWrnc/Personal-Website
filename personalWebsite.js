@@ -42,13 +42,6 @@ const projects = [
     description: "A two-player game where players take turns marking X or O on a 3×3 grid. This project helped me learn about game logic, conditionals, and managing state in JavaScript."
   },
   {
-    title: "To Do List",
-    linkGit: "https://github.com/TilenWrnc/ToDoList",
-    linkLive: "https://tilenwrnc.github.io/ToDoList/",
-    image: "./images/ToDoList.png",
-    description: "A simple task manager that lets users add, complete, and delete tasks. I used this project to get more comfortable with forms, event listeners, and updating the DOM."
-  },
-  {
     title: "Weather App",
     linkGit: "https://github.com/TilenWrnc/WeatherApp",
     linkLive: "https://tilenwrnc.github.io/WeatherApp/",
@@ -73,22 +66,22 @@ const projects = [
     title: "Shopping Cart",
     linkGit: "https://github.com/TilenWrnc/ShoppingCart",
     linkLive: "https://shopping-cart-liard-sigma.vercel.app/",
-    image: "./images/BattleShip.png",
+    image: "./images/ShoppingCart.png",
     description: "A dynamic online shop built with React, featuring product browsing, cart management, and quantity updates. Utilized React Router for navigation and state management to track items across pages. Focused on creating a responsive and user-friendly interface with real-time cart updates."
   },
   {
-    title: "To do List remastered",
-    linkGit: "https://github.com/TilenWrnc/to-do-remastered",
-    linkLive: "https://to-do-remastered-tnpp.vercel.app/",
-    image: "./images/ToDoRemastered.png",
-    description: "A remastered version of my To do List. Using NextJs with typescript and using Convex database."
+    title: "Trello Clone",
+    linkGit: "https://github.com/TilenWrnc/trello-clone",
+    linkLive: "",
+    image: "./images/TrelloClone.png",
+    description: "A full-stack project management web app built with Next.js, PostgreSQL, and BetterAutgh for authentication. Users can create boards, add lists and cards, and organize tasks in a kanban-style interface. The app features drag-and-drop functionality, real-time updates, and secure user authentication, demonstrating modern web development practices with server-side rendering, API routes, and responsive design."
   },
   {
     title: "The Odin Book",
-    linkGit: "https://github.com/TilenWrnc/The-Odin-Book",
-    linkLive: "https://the-odin-book.onrender.com/",
+    linkGit: "https://github.com/TilenWrnc/the-odin-book-remastered",
+    linkLive: "/",
     image: "./images/TheOdinBook.png",
-    description: "The Odin Book is a mini Facebook-style social networking app where users can create profiles, follow others, write posts, comment, like, and send messages to each other. It is built using Node.js, Express, PostgreSQL, and Prisma ORM."
+    description: "A full-stack social media application built with Next.js, PostgreSQL, and Clerk for authentication. Users can create accounts, log in securely, and share posts in a familiar social media interface. The app features real-time data fetching, a responsive design, and a clean user experience, showcasing modern web development practices with server-side rendering, API routes, and secure user authentication."
   },
 ];
 
@@ -110,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       <div class="project-main">
         <img src="${project.image}" class="project-pic" alt="${project.title}">
-        <p>${project.description}</p>
+        <p class="project-description">${project.description}</p>
       </div>
     `;
 

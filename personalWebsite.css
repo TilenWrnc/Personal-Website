@@ -47,11 +47,11 @@ svg {
 .skills-container *{
     background-color: var(--primary-color);
     text-align: center;
-    padding: 1.3vw 0vw;
 }
 
 .skills-container h2 {
-    font-size: clamp(2rem, 3.5vw, 4vw);
+    font-size: clamp(2rem, 3vw, 4vw);
+    padding-bottom: 20px;
 }
 
 .skills {
@@ -63,6 +63,7 @@ svg {
 
 .skills h3 {
     font-size: clamp(1.2rem, 2vw, 4vw);
+    padding-bottom: 10px;
 }
 
 .skills > div {
@@ -70,19 +71,24 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
 
+}
+
+.skill-title {
+    color: white;
 }
 
 .skill-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.skill-icons svg {
-  width: clamp(15px, 10vw, 100px);
+.skill-icons div svg {
+  width: clamp(40px, 3vw, 100px);
   cursor: pointer;
   fill: white;
   height: auto;
@@ -97,6 +103,10 @@ svg {
 .project-title {
     font-size: clamp(0.5rem, 2vw, 1.5rem);
 
+}
+
+.project-description {
+    color: #404040;
 }
 
 .my-projects > p {
@@ -149,8 +159,7 @@ svg {
 }
 
 .links a svg {
-    width: clamp(5px, 4vw, 100px);
-
+    width: clamp(20px, 2vw, 100px);
 }
 
 .project-pic {
@@ -224,16 +233,16 @@ svg {
     background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
+    gap: 5vh;
     justify-content: center;
-    gap: 2vw;
+    color:white;
 }
 
 .contact-container a{
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 5px;
     text-decoration: none;
-    font-weight: 900;
     color: black;
     font-size: clamp(0.5rem, 2vw, 20px);
 
@@ -242,4 +251,5 @@ svg {
 .contact-container a svg {
     width: clamp(15px, 5vw, 40px);
     height: auto;
+    fill: white;
 }
